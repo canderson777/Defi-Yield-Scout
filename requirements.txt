@@ -1,0 +1,32 @@
+# DeFi Yield Scout Dependencies
+
+# Core dependencies
+aiohttp>=3.8.0
+pandas>=1.5.0
+requests>=2.28.0
+python-dotenv>=0.19.0
+
+# Data analysis
+numpy>=1.21.0
+scipy>=1.9.0
+
+# Web scraping and APIs
+beautifulsoup4>=4.11.0
+lxml>=4.9.0
+
+# Async support
+asyncio-throttle>=1.0.0
+
+# Optional: ROMA framework dependencies (if using ROMA)
+# These would be installed separately when setting up ROMA
+# pydantic>=2.11.4
+# loguru>=0.7.3
+# networkx>=3.4.2
+# agno>=1.8,<2.0
+# litellm>=1.72.6
+
+# Development dependencies
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+black>=22.0.0
+flake8>=5.0.0
