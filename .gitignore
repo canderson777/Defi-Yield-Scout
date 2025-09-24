@@ -1,10 +1,39 @@
-# Byte-compiled / optimized / DLL files
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-*.ipynb
-# C extensions
 *.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env/
+
+# DeFi Yield Scout specific
 old_project_runs/
 .claude
 *.csv
@@ -50,14 +79,6 @@ research_agent.log
 # Jupyter checkpoints
 .ipynb_checkpoints
 
-# Environment files
-.env
-.venv/
-env/
-venv/
-.claude-sessions/
-.
-
 # PDM
 .pdm.toml
 .pdm-python
@@ -69,17 +90,38 @@ node_modules/
 # Build outputs
 dist/
 build/
-*.egg-info/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Data
+data/
+*.csv
+*.json
+*.db
+*.sqlite
+
+# ROMA specific
+project_results/
+emergency_backups/
+local_data/
 
 # Distribution / packaging
 .Python
@@ -167,16 +209,6 @@ ipython_config.py
 #   commonly ignored for libraries.
 #   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
 #poetry.lock
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm-project.org/#use-with-ide
-.pdm.toml
-.pdm-python
-.pdm-build/
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
 __pypackages__/
